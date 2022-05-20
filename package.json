@@ -33,7 +33,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prepublishOnly": "npm run build",
     "test": "jest",
-    "test:debug": "cross-env DEBUG=sagiri jest"
+    "test:debug": "cross-env DEBUG=sagiri jest",
+    "prepack": "npm run build"
   },
   "keywords": [
     "hitorigoto",
