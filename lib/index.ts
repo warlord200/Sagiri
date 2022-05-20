@@ -118,6 +118,9 @@ const sagiri = (token: string, defaultOptions: Options = { results: 5 }) => {
       const {
         header: { similarity, thumbnail },
       } = result;
+      const {
+        data: { source },
+      } = result;
 
       return {
         url,
@@ -127,6 +130,7 @@ const sagiri = (token: string, defaultOptions: Options = { results: 5 }) => {
         thumbnail,
         authorName,
         authorUrl,
+        source,
         raw: result,
       };
     });
